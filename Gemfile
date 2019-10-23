@@ -22,7 +22,7 @@ else
   gem 'activerecord', '5.2.2'
   gem 'activesupport', '5.2.2'
   gem 'railties', '5.2.2'
-  gem 'sprockets-rails'
+  gem 'sprockets-rails', '>= 3.2.1'
   gem 'seed-fu'
 end
 
@@ -52,7 +52,7 @@ gem 'barber'
 # to the standard releases
 gem 'message_bus', '2.2.0.pre.1'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 2.0.4'
 
 gem 'fast_xs', platform: :mri
 
@@ -129,7 +129,7 @@ group :test, :development do
   gem 'mocha', require: false
   gem 'rb-fsevent', require: RUBY_PLATFORM =~ /darwin/i ? 'rb-fsevent' : false
   gem 'rb-inotify', '~> 0.9', require: RUBY_PLATFORM =~ /linux/i ? 'rb-inotify' : false
-  gem 'rspec-rails', require: false
+  gem 'rspec-rails', '>= 3.7.2', require: false
   gem 'shoulda', require: false
   gem 'rspec-html-matchers'
   gem 'pry-nav'
@@ -176,7 +176,7 @@ gem 'memory_profiler', require: false, platform: :mri
 
 gem 'cppjieba_rb', require: false
 
-gem 'lograge', require: false
+gem 'lograge', '>= 0.10.0', require: false
 gem 'logstash-event', require: false
 gem 'logstash-logger', require: false
 gem 'logster'

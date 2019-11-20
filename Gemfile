@@ -22,7 +22,7 @@ else
   gem 'activerecord', '5.2.2'
   gem 'activesupport', '5.2.2'
   gem 'railties', '5.2.2'
-  gem 'sprockets-rails'
+  gem 'sprockets-rails', '>= 3.2.1'
   gem 'seed-fu'
 end
 
@@ -52,7 +52,7 @@ gem 'barber'
 # to the standard releases
 gem 'message_bus', '2.2.0.pre.1'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 2.0.4'
 
 gem 'fast_xs', platform: :mri
 
@@ -71,7 +71,7 @@ gem 'email_reply_trimmer', '~> 0.1'
 gem 'discourse_image_optim', require: 'image_optim'
 gem 'multi_json'
 gem 'mustache'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.10.5'
 
 gem 'omniauth'
 gem 'omniauth-openid'
@@ -93,7 +93,7 @@ gem 'rake'
 
 gem 'thor', require: false
 gem 'rinku'
-gem 'sanitize'
+gem 'sanitize', '>= 4.6.5'
 gem 'sidekiq'
 gem 'mini_scheduler'
 
@@ -129,9 +129,9 @@ group :test, :development do
   gem 'mocha', require: false
   gem 'rb-fsevent', require: RUBY_PLATFORM =~ /darwin/i ? 'rb-fsevent' : false
   gem 'rb-inotify', '~> 0.9', require: RUBY_PLATFORM =~ /linux/i ? 'rb-inotify' : false
-  gem 'rspec-rails', require: false
+  gem 'rspec-rails', '>= 3.7.2', require: false
   gem 'shoulda', require: false
-  gem 'rspec-html-matchers'
+  gem 'rspec-html-matchers', '>= 0.9.1'
   gem 'pry-nav'
   gem 'byebug', require: ENV['RM_INFO'].nil?
   gem 'rubocop', require: false
@@ -169,14 +169,14 @@ gem 'rbtrace', require: false, platform: :mri
 gem 'gc_tracer', require: false, platform: :mri
 
 # required for feed importing and embedding
-gem 'ruby-readability', require: false
+gem 'ruby-readability', '>= 0.7.0', require: false
 
 gem 'stackprof', require: false, platform: :mri
 gem 'memory_profiler', require: false, platform: :mri
 
 gem 'cppjieba_rb', require: false
 
-gem 'lograge', require: false
+gem 'lograge', '>= 0.10.0', require: false
 gem 'logstash-event', require: false
 gem 'logstash-logger', require: false
 gem 'logster'

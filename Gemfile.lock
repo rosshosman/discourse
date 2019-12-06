@@ -216,6 +216,7 @@ GEM
     multipart-post (2.0.0)
     mustache (1.0.5)
     nap (1.1.0)
+    nio4r (2.5.2)
     no_proxy_fix (0.1.2)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
@@ -284,7 +285,8 @@ GEM
     pry-rails (0.3.6)
       pry (>= 0.10.4)
     public_suffix (3.0.2)
-    puma (3.11.4)
+    puma (4.3.1)
+      nio4r (~> 2.0)
     r2 (0.2.7)
     rack (2.0.6)
     rack-mini-profiler (1.0.1)
@@ -517,7 +519,7 @@ DEPENDENCIES
   pg
   pry-nav
   pry-rails
-  puma
+  puma (>= 3.12.2)
   r2 (~> 0.2.5)
   rack-mini-profiler
   rack-protection
@@ -557,4 +559,4 @@ DEPENDENCIES
   webpush
 
 BUNDLED WITH
-   1.17.1
+   1.17.3

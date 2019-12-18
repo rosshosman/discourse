@@ -62,7 +62,7 @@ gem 'fast_xor', platform: :mri
 gem 'fastimage'
 
 gem 'aws-sdk-s3', require: false
-gem 'excon', require: false
+gem 'excon', '>= 0.71.0', require: false
 gem 'unf', require: false
 
 gem 'email_reply_trimmer', '~> 0.1'

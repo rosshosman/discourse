@@ -22,7 +22,7 @@ else
   gem 'activerecord', '5.2.2'
   gem 'activesupport', '5.2.2'
   gem 'railties', '5.2.2'
-  gem 'sprockets-rails'
+  gem 'sprockets-rails', '>= 3.2.1'
   gem 'seed-fu'
 end
 
@@ -50,9 +50,9 @@ gem 'barber'
 # a pre release here to make we don't do a full release prior to
 # baking here. Remove 2.2.0.pre no later than Jan 2019 and move back
 # to the standard releases
-gem 'message_bus', '2.2.0.pre.1'
+gem 'message_bus', '2.2.0'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 2.0.4'
 
 gem 'fast_xs', platform: :mri
 
@@ -73,17 +73,17 @@ gem 'multi_json'
 gem 'mustache'
 gem 'nokogiri'
 
-gem 'omniauth'
-gem 'omniauth-openid'
+gem 'omniauth', '>= 1.8.1'
+gem 'omniauth-openid', '>= 1.0.1'
 gem 'openid-redis-store'
-gem 'omniauth-facebook'
-gem 'omniauth-twitter'
-gem 'omniauth-instagram'
-gem 'omniauth-github'
+gem 'omniauth-facebook', '>= 5.0.0'
+gem 'omniauth-twitter', '>= 1.4.0'
+gem 'omniauth-instagram', '>= 1.3.0'
+gem 'omniauth-github', '>= 1.3.0'
 
-gem 'omniauth-oauth2', require: false
+gem 'omniauth-oauth2', '>= 1.5.0', require: false
 
-gem 'omniauth-google-oauth2'
+gem 'omniauth-google-oauth2', '>= 0.5.3'
 gem 'oj'
 gem 'pg'
 gem 'mini_sql'
@@ -94,7 +94,7 @@ gem 'rake'
 gem 'thor', require: false
 gem 'rinku'
 gem 'sanitize'
-gem 'sidekiq'
+gem 'sidekiq', '>= 5.1.3'
 gem 'mini_scheduler'
 
 # for sidekiq web
@@ -103,7 +103,7 @@ gem 'tilt', require: false
 gem 'execjs', require: false
 gem 'mini_racer'
 gem 'highline', '~> 1.7.0', require: false
-gem 'rack-protection' # security
+gem 'rack-protection' , '>= 2.0.3' # security
 
 # Gems used only for assets and not required in production environments by default.
 # Allow everywhere for now cause we are allowing asset debugging in production
@@ -129,7 +129,7 @@ group :test, :development do
   gem 'mocha', require: false
   gem 'rb-fsevent', require: RUBY_PLATFORM =~ /darwin/i ? 'rb-fsevent' : false
   gem 'rb-inotify', '~> 0.9', require: RUBY_PLATFORM =~ /linux/i ? 'rb-inotify' : false
-  gem 'rspec-rails', require: false
+  gem 'rspec-rails', '>= 3.7.2', require: false
   gem 'shoulda', require: false
   gem 'rspec-html-matchers'
   gem 'pry-nav'
@@ -140,7 +140,7 @@ end
 group :development do
   gem 'ruby-prof', require: false
   gem 'bullet', require: !!ENV['BULLET']
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.4.0'
   gem 'binding_of_caller'
   gem 'annotate'
   gem 'foreman', require: false
@@ -161,7 +161,7 @@ gem 'htmlentities', require: false
 #  we are open to it. by deferring require to the initializer we can configure discourse installs without it
 
 gem 'flamegraph', require: false
-gem 'rack-mini-profiler', require: false
+gem 'rack-mini-profiler', '>= 1.0.1', require: false
 
 gem 'unicorn', require: false, platform: :mri
 gem 'puma', require: false
@@ -176,7 +176,7 @@ gem 'memory_profiler', require: false, platform: :mri
 
 gem 'cppjieba_rb', require: false
 
-gem 'lograge', require: false
+gem 'lograge', '>= 0.10.0', require: false
 gem 'logstash-event', require: false
 gem 'logstash-logger', require: false
 gem 'logster'
